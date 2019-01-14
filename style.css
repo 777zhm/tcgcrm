@@ -1,0 +1,176 @@
+@font-face {
+			font-family: "ArialRegular";
+			src: url("/fonts/ArialRegular/ArialRegular.eot");
+			src: url("/fonts/ArialRegular/ArialRegular.eot?#iefix")format("embedded-opentype"),
+			url("/fonts/ArialRegular/ArialRegular.woff") format("woff"),
+			url("/fonts/ArialRegular/ArialRegular.ttf") format("truetype");
+			font-style: normal;
+			font-weight: normal;
+	}
+
+/* Start Base styles */
+html{
+	font-size: 14px;
+}
+
+body{
+	font-family: "ArialRegular", sans-serif;
+	font-size: 14px;
+	color: #000000;
+	background-color: #ffffff;
+}
+
+h1{
+	font-size: 3.5715rem; /* 50px/14 */
+	color: #ffffff;
+	text-transform: uppercase;
+}
+
+h2{
+	font-size: 2.42857rem; /* 34px/14 */
+	text-transform: uppercase;
+}
+
+h3{
+	font-size: 1.715rem; /* 24px/14 */
+}
+
+h4{
+	font-size: 1.2857rem; /* 18px/14 */
+}
+
+p{
+	font-size: 14px;
+}
+
+a{
+	color: #000000;
+}
+a:hover{
+	text-decoration: none;
+	color: inherit;
+}
+/* End Base styles */
+/* Start Buttons */
+
+/* End Buttons */
+/* Start header */
+
+header{
+	color: #fff;
+	height: 40px;
+	background-color: #003765;
+}
+/* End header */
+/* Start section */
+.circle{
+	border: 1px solid green;
+	border-radius: 50%;
+	height: 100px;
+	width: 100px;
+	text-align: center; 
+	position: relative;
+}
+
+.circle .circle_number{
+	width: 36px;
+	height: 36px;
+	font-style: 36px;
+	line-height: 36px;
+
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	margin: auto;
+}
+
+
+
+
+/* End section */
+/* Start stars section */
+.manager_photo{
+	border-radius: 50%;	
+	max-height: 100px;
+	max-width: 100px;
+}
+
+.manager_telegram{
+	background-image: url(img/telegram_icon.svg);
+	background-repeat: no-repeat;
+	background-position: left center;
+	background-size: auto 100%;
+	padding-left: 22px;
+}
+
+.manager_telephone{
+	background-image: url(img/telephone_icon.svg);
+	background-repeat: no-repeat;
+	background-position: left center;
+	background-size: auto 100%;
+	padding-left: 22px;
+}
+
+
+.stars {
+  cursor: pointer;
+}
+.stars:hover .star polygon {
+  fill: #ffd055 !important;
+}
+.stars .star {
+  float: left;
+}
+.stars .star polygon {
+  fill: #d8d8d8;
+}
+.stars .star:hover ~ .star polygon {
+  fill: #d8d8d8 !important;
+}
+.stars[data-stars] .star polygon {
+  fill: #ffd055;
+}
+.stars[data-stars="1"] .star:nth-child(1) ~ .star polygon {
+  fill: #d8d8d8;
+}
+.stars[data-stars="2"] .star:nth-child(2) ~ .star polygon {
+  fill: #d8d8d8;
+}
+.stars[data-stars="3"] .star:nth-child(3) ~ .star polygon {
+  fill: #d8d8d8;
+}
+.stars[data-stars="4"] .star:nth-child(4) ~ .star polygon {
+  fill: #d8d8d8;
+}
+.stars[data-stars="5"] .star:nth-child(5) ~ .star polygon {
+  fill: #d8d8d8;
+}
+
+.stars_hint{
+
+}
+
+/* End stars section */
+/* Start section */
+
+/* End section */
+/* Start section */
+
+/* End section */
+/* Start section */
+
+/* End section */
+/* Start section */
+
+/* End section */
+/* Start section */
+
+/* End section */
+/* Start section */
+
+/* End section */
+/* Start section */
+
+/* End section */
