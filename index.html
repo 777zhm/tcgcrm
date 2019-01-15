@@ -20,291 +20,306 @@
 
 	<div class="wrapper">
 		<!-- Sidebar  -->
-<nav id="sidebar">
-	<ul class="list-unstyled components">
-		<li class="active">
-			<a href="#">
-				<i class="fas fa-home"></i>
-				<span>Головна</span>
-				
-		  	</a>
-		</li>
-		<li>
-			<a href="#">
-			  	<i class="fas fa-truck-moving"></i>
-			  	<span>Вантажі</span>
-		  	</a>
-		</li>
-		<li>
-			<a href="#">
-			  	<i class="fas fa-clipboard-list"></i>
-			  	<span>Замовлення</span>
-		  	</a>
-		</li>
-		<li>
-			<a href="#">
-			  	<i class="fas fa-dollar-sign"></i>
-			  	<span>Фінанси</span>
-		  	</a>
-		</li>
-		<li>
-			<a href="#">
-				<i class="far fa-newspaper"></i>
-				<span>Новини</span>
-			</a>
-		</li>
-		<li>
-			<a href="#">
-				<i class="far fa-envelope"></i>
-				<span>Контакти</span>
-			</a>
-		</li>
-		<li>
-			<a href="#">
-				<i class="far fa-user"></i>
-				<span>Акаунт</span>
-			</a>
-		</li>
-	</ul>
-	</nav>
+	    <nav id="sidebar">
+            <div class="sidebar-header">
+                
+            </div>
+
+            <ul class="list-unstyled components">
+                <li class="active">
+                    <a href="#">
+                        <i class="fas fa-home"></i>
+                        Головна
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fas fa-truck-moving"></i>
+                        Вантажі
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fas fa-clipboard-list"></i>
+                        Замовлення
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fas fa-dollar-sign"></i>
+                        Фінанси
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="far fa-newspaper"></i>
+                        Новини
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="far fa-envelope"></i>
+                        Контакти
+                    </a>
+                </li>
+                <li>
+                    <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                        <i class="far fa-user"></i>
+                        Акаунт
+                    </a>
+                    <ul class="collapse list-unstyled" id="pageSubmenu">
+                        <li>
+                            <a href="#">Клієнт</a>
+                        </li>
+                        <li>
+                            <a href="#">Оновлення</a>
+                        </li>
+                        <li>
+                            <a href="#">Оповіщення</a>
+                        </li>
+                        <li>
+                            <a href="#">Адреса</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+
 		<!-- Page Content  -->
 		<div id="content">
 	  <header>
 		<div class="container-fluid">
-		<div class="row justify-content-around">
-		  <div>
-			<button type="button" id="sidebarCollapse" class="btn btn-info">
-						<i class="fas fa-align-left"></i>
+			<div class="row justify-content-around">
+				<div>
+					<button type="button" id="sidebarCollapse" class="btn btn-info">
+				    	<i class="fas fa-align-left"></i>
 					</button>
-		  </div>
-		  
-		  <div class="col-lg-3">Глобальный пошук</div>
-		  <div class="col-lg-2">
-			<img src="img/cash_icon.svg" alt="cash_icon">
-			<p>&#36; 0</p>
-		  </div>
-		  <div class="col-lg-2">
-			<p>ID: 31-589</p>
-		  </div>
-		  <div class="col-lg-2">
-			<p>Имя</p>
-			<img src="img/logout_icon.svg" alt="logout_icon">
-		  </div>
-		</div>
-
 				</div>
-	  </header>
-			<div class="container-fluid">
-
-		<div class="row">
-		  <div class="col-lg-7 col-md-6">
-			<div class="row">
-			  <h3>ОСТАННІ ОНОВЛЕННЯ</h3>
-				<table class="table table-striped table-hover">
-				  <thead>
-					<tr>
-					  <th scope="col">Дата</th>
-					  <th scope="col">Ключ</th>
-					  <th scope="col">Інфо</th>
-					</tr>
-				  </thead>
-				  <tbody>
-					<tr>
-					  <th scope="row">21/12</th>
-					  <td>82714</td>
-					  <td>"Ukraine - Delivered" - Cargo status has been changed</td>
-					</tr>
-					<tr>
-					  <th scope="row">21/12</th>
-					  <td>82764</td>
-					  <td>"Ukraine - Delivered" - Cargo status has been changed</td>
-					</tr>
-					<tr>
-					  <th scope="row">21/12</th>
-					  <td>81793</td>
-					  <td>"Ukraine - Delivered" - Cargo status has been changed</td>
-					</tr>
-					<tr>
-					  <th scope="row">21/12</th>
-					  <td>82297</td>
-					  <td>"Ukraine - Delivered" - Cargo status has been changed</td>
-					</tr>
-				  </tbody>
-				</table>
-			</div>
-			<div class="row justify-content-center text-center">
-			  <div class="col-12">
-				<h3>ВАНТАЖІ</h3>
-			  </div>
-			  <div class="col-3">
-				<div>
-				  <img src="img/home_icon.svg" alt="home_icon">
-				  <h4>Отримано</h4>
-				</div>
-				<div class="row justify-content-center">
-				  <div class="circle">
-					<div class="circle_number">123</div>
-				  </div>
-				</div>
-			  </div>
-			  <div class="col-3">
-				<div>
-				  <img src="img/hasgone_icon.svg" alt="home_icon">
-				  <h4>Відправлено</h4>
-				</div>
-				<div class="row justify-content-center">
-				  <div class="circle">
-					<div class="circle_number">123</div>
-				  </div>
-				</div>
-			  </div>
-			  <div class="col-3">
-				<div>
-				  <img src="img/hascome_icon.svg" alt="home_icon">
-				  <h4>Прибуло</h4>
-				</div>
-				<div class="row justify-content-center">
-				  <div class="circle">
-					<div class="circle_number">123</div>
-				  </div>
-				</div>
-			  </div>
-			  <div class="col-3">
-				<div>
-				  <img src="img/storage_icon.svg" alt="home_icon">
-				  <h4>На складі</h4>
-				</div>
-				<div class="row justify-content-center">
-				  <div class="circle">
-					<div class="circle_number">123</div>
-				  </div>
-				</div>
-			  </div>
-			  <div class="col-12">
-				<img src="img/total_icon.svg" alt="total_icon">
-				<h4>Загалом</h4>
-			  </div>
-			</div>
-		  </div>
-		  <div class="col-lg-5 col-md-6">
-			<h3>ФІНАНСИ</h3>
-			<div class="row">
-			  <div class="col-md-6">
-				<span>Баланс</span>
+			  <div class="col-lg-3">Глобальный пошук</div>
+			  <div class="col-lg-2">
+				<i class="fas fa-money-check-alt"></i>
 				<p>&#36; 0</p>
 			  </div>
-			  <div class="col-md-6">
-				<button>Додати кошти</button>
+			  <div class="col-lg-2">
+				<p>ID: 31-589</p>
+			  </div>
+			  <div class="col-lg-2">
+				<p>Андрій</p>
+				<i class="fas fa-sign-out-alt"></i>
 			  </div>
 			</div>
-			<div class="row">
-			  <h4>Останні транзакції:</h4>
-			  <table class="table table-striped table-hover">
-				<thead>
-				  <tr>
-					<th scope="col">Дата</th>
-					<th scope="col">Замовлення</th>
-					<th scope="col">Сума, &#36;</th>
-					<th scope="col">Баланс</th>
-				  </tr>
-				</thead>
-				<tbody>
-				  <tr>
-					<th scope="row">21/12</th>
-					<td>PRU-47647</td>
-					<td>-387.98</td>
-					<td>0.00</td>
-				  </tr>
-				  <tr>
-					<th scope="row">21/12</th>
-					<td>PRU-47993</td>
-					<td>-1116.00</td>
-					<td>387.98</td>
-				  </tr>
-				  <tr>
-					<th scope="row">21/12</th>
-					<td>PRU-48173</td>
-					<td>-3179.00</td>
-					<td>1503.98</td>
-				  </tr>
-				</tbody>
-			  </table>
-			</div>
-			<div class="row">
-			  <div class="col-12">
-				<h4>ВАШ МЕНЕДЖЕР</h4>
-			  </div>
-			  <div class="col-6 manager_left">
-				<div>
-				  <img class="img img-fluid manager_photo" src="img/manager_1.png" alt="manager_1" >
-				</div>
-				<div class="stars" data-stars="1">
-				  <svg height="25" width="23" class="star rating" data-rating="1">
-					<polygon points="9.9, 1.1, 3.3, 21.78, 19.8, 8.58, 0, 8.58, 16.5, 21.78" style="fill-rule:nonzero;"/>
-				  </svg>
-				  <svg height="25" width="23" class="star rating" data-rating="2">
-					<polygon points="9.9, 1.1, 3.3, 21.78, 19.8, 8.58, 0, 8.58, 16.5, 21.78" style="fill-rule:nonzero;"/>
-				  </svg>
-				  <svg height="25" width="23" class="star rating" data-rating="3">
-					<polygon points="9.9, 1.1, 3.3, 21.78, 19.8, 8.58, 0, 8.58, 16.5, 21.78" style="fill-rule:nonzero;"/>
-				  </svg>
-				  <svg height="25" width="23" class="star rating" data-rating="4">
-					<polygon points="9.9, 1.1, 3.3, 21.78, 19.8, 8.58, 0, 8.58, 16.5, 21.78" style="fill-rule:nonzero;"/>
-				  </svg>
-				  <svg height="25" width="23" class="star rating" data-rating="5">
-					<polygon points="9.9, 1.1, 3.3, 21.78, 19.8, 8.58, 0, 8.58, 16.5, 21.78" style="fill-rule:nonzero;"/>
-				  </svg>
-				</div>
-				<h6>Оцініть вашого менеджера</h6>
-			  </div>
-			  <div class="col-6 manager_right">
-				<div>
-				  <div class="manager_name"><h3>Людмила</h3></div>
-				  <div class="manager_email">l.kosenko@utec-l.com</div>
-				  <div class="manager_telegram">+380966426120</div>
-				  <div class="manager_telephone">+380966426120</div>
-				</div>
-			  </div>
-			</div>
-			<div class="row">
-			  <div class="col-12">
-				<h4>ВАШ ОПЕРАЦІЙНИЙ МЕНЕДЖЕР</h4>
-			  </div>
-			  <div class="col-6 manager_left">
-				<div>
-				  <img class="img img-fluid manager_photo" src="img/manager_2.png" alt="manager_1" >
-				</div>
-				<div class="stars" data-stars="1">
-				  <svg height="25" width="23" class="star rating" data-rating="1">
-					<polygon points="9.9, 1.1, 3.3, 21.78, 19.8, 8.58, 0, 8.58, 16.5, 21.78" style="fill-rule:nonzero;"/>
-				  </svg>
-				  <svg height="25" width="23" class="star rating" data-rating="2">
-					<polygon points="9.9, 1.1, 3.3, 21.78, 19.8, 8.58, 0, 8.58, 16.5, 21.78" style="fill-rule:nonzero;"/>
-				  </svg>
-				  <svg height="25" width="23" class="star rating" data-rating="3">
-					<polygon points="9.9, 1.1, 3.3, 21.78, 19.8, 8.58, 0, 8.58, 16.5, 21.78" style="fill-rule:nonzero;"/>
-				  </svg>
-				  <svg height="25" width="23" class="star rating" data-rating="4">
-					<polygon points="9.9, 1.1, 3.3, 21.78, 19.8, 8.58, 0, 8.58, 16.5, 21.78" style="fill-rule:nonzero;"/>
-				  </svg>
-				  <svg height="25" width="23" class="star rating" data-rating="5">
-					<polygon points="9.9, 1.1, 3.3, 21.78, 19.8, 8.58, 0, 8.58, 16.5, 21.78" style="fill-rule:nonzero;"/>
-				  </svg>
-				</div>
-				<h6>Оцініть вашого менеджера</h6>
-			  </div>
-			  <div class="col-6 manager_right">
-				<div>
-				  <div class="manager_name"><h3>Ірина</h3></div>
-				  <div class="manager_email">l.kosenko@utec-l.com</div>
-				  <div class="manager_telegram">+380966426120</div>
-				  <div class="manager_telephone">+380966426120</div>
-				</div>
-			  </div>
-			</div>
-		  </div>
 		</div>
+	  </header>
+		<div class="container-fluid">
 
+			<div class="row">
+				<div class="col-lg-7 col-md-6">
+					<div class="row">
+					  	<h3>ОСТАННІ ОНОВЛЕННЯ</h3>
+						<table class="table table-striped table-hover">
+						  <thead>
+							<tr>
+							  <th scope="col">Дата</th>
+							  <th scope="col">Ключ</th>
+							  <th scope="col">Інфо</th>
+							</tr>
+						  </thead>
+						  <tbody>
+							<tr>
+							  <th scope="row">21/12</th>
+							  <td>82714</td>
+							  <td>"Ukraine - Delivered" - Cargo status has been changed</td>
+							</tr>
+							<tr>
+							  <th scope="row">21/12</th>
+							  <td>82764</td>
+							  <td>"Ukraine - Delivered" - Cargo status has been changed</td>
+							</tr>
+							<tr>
+							  <th scope="row">21/12</th>
+							  <td>81793</td>
+							  <td>"Ukraine - Delivered" - Cargo status has been changed</td>
+							</tr>
+							<tr>
+							  <th scope="row">21/12</th>
+							  <td>82297</td>
+							  <td>"Ukraine - Delivered" - Cargo status has been changed</td>
+							</tr>
+						  </tbody>
+						</table>
+					</div>
+					<div class="row justify-content-center text-center">
+					  <div class="col-12">
+						<h3>ВАНТАЖІ</h3>
+					  </div>
+					  <div class="col-3">
+						<div>
+						  <i class="fas fa-cubes"></i>
+						  <h4>Отримано</h4>
+						</div>
+						<div class="row justify-content-center">
+						  <div class="circle">
+							<div class="circle_number">123</div>
+						  </div>
+						</div>
+					  </div>
+					  <div class="col-3">
+						<div>
+						  <i class="fas fa-plane-departure"></i>
+						  <h4>Відправлено</h4>
+						</div>
+						<div class="row justify-content-center">
+						  <div class="circle">
+							<div class="circle_number">123</div>
+						  </div>
+						</div>
+					  </div>
+					  <div class="col-3">
+						<div>
+						  <i class="fas fa-plane-arrival"></i>
+						  <h4>Прибуло</h4>
+						</div>
+						<div class="row justify-content-center">
+						  <div class="circle">
+							<div class="circle_number">123</div>
+						  </div>
+						</div>
+					  </div>
+					  <div class="col-3">
+						<div>
+						  <i class="fas fa-cubes"></i>
+						  <h4>На складі</h4>
+						</div>
+						<div class="row justify-content-center">
+						  <div class="circle">
+							<div class="circle_number">123</div>
+						  </div>
+						</div>
+					  </div>
+					  <div class="col-12">
+						<img src="img/total_icon.svg" alt="total_icon">
+						<h4>Загалом</h4>
+					  </div>
+					</div>
+				</div>
+				<div class="col-lg-5 col-md-6">
+					<h3>ФІНАНСИ</h3>
+					<div class="row">
+					  <div class="col-md-6">
+						<span>Баланс</span>
+						<p>&#36; 0</p>
+					  </div>
+					  <div class="col-md-6">
+						<button>Додати кошти</button>
+					  </div>
+					</div>
+					<div class="row">
+					  <h4>Останні транзакції:</h4>
+					  <table class="table table-striped table-hover">
+						<thead>
+						  <tr>
+							<th scope="col">Дата</th>
+							<th scope="col">Замовлення</th>
+							<th scope="col">Сума, &#36;</th>
+							<th scope="col">Баланс</th>
+						  </tr>
+						</thead>
+						<tbody>
+						  <tr>
+							<th scope="row">21/12</th>
+							<td>PRU-47647</td>
+							<td>-387.98</td>
+							<td>0.00</td>
+						  </tr>
+						  <tr>
+							<th scope="row">21/12</th>
+							<td>PRU-47993</td>
+							<td>-1116.00</td>
+							<td>387.98</td>
+						  </tr>
+						  <tr>
+							<th scope="row">21/12</th>
+							<td>PRU-48173</td>
+							<td>-3179.00</td>
+							<td>1503.98</td>
+						  </tr>
+						</tbody>
+					  </table>
+					</div>
+					<div class="row">
+					  <div class="col-12">
+						<h4>ВАШ МЕНЕДЖЕР</h4>
+					  </div>
+					  <div class="col-6 manager_left">
+						<div>
+						  <img class="img img-fluid manager_photo" src="img/manager_1.png" alt="manager_1" >
+						</div>
+						<div class="stars" data-stars="1">
+						  <svg height="25" width="23" class="star rating" data-rating="1">
+							<polygon points="9.9, 1.1, 3.3, 21.78, 19.8, 8.58, 0, 8.58, 16.5, 21.78" style="fill-rule:nonzero;"/>
+						  </svg>
+						  <svg height="25" width="23" class="star rating" data-rating="2">
+							<polygon points="9.9, 1.1, 3.3, 21.78, 19.8, 8.58, 0, 8.58, 16.5, 21.78" style="fill-rule:nonzero;"/>
+						  </svg>
+						  <svg height="25" width="23" class="star rating" data-rating="3">
+							<polygon points="9.9, 1.1, 3.3, 21.78, 19.8, 8.58, 0, 8.58, 16.5, 21.78" style="fill-rule:nonzero;"/>
+						  </svg>
+						  <svg height="25" width="23" class="star rating" data-rating="4">
+							<polygon points="9.9, 1.1, 3.3, 21.78, 19.8, 8.58, 0, 8.58, 16.5, 21.78" style="fill-rule:nonzero;"/>
+						  </svg>
+						  <svg height="25" width="23" class="star rating" data-rating="5">
+							<polygon points="9.9, 1.1, 3.3, 21.78, 19.8, 8.58, 0, 8.58, 16.5, 21.78" style="fill-rule:nonzero;"/>
+						  </svg>
+						</div>
+						<h6>Оцініть вашого менеджера</h6>
+					  </div>
+					  <div class="col-6 manager_right">
+						<div>
+						  <div class="manager_name"><h3>Людмила</h3></div>
+						  <div class="manager_email">l.kosenko@utec-l.com</div>
+						  <div class="manager_telegram"><i class="fab fa-telegram"></i>+380966426120</div>
+						  <div class="manager_telephone"><i class="fas fa-mobile-alt"></i>+380966426120</div>
+						</div>
+					  </div>
+					</div>
+					<div class="row">
+					  <div class="col-12">
+						<h4>ВАШ ОПЕРАЦІЙНИЙ МЕНЕДЖЕР</h4>
+					  </div>
+					  <div class="col-6 manager_left">
+						<div>
+						  <img class="img img-fluid manager_photo" src="img/manager_2.png" alt="manager_1" >
+						</div>
+						<div class="stars" data-stars="1">
+						  <svg height="25" width="23" class="star rating" data-rating="1">
+							<polygon points="9.9, 1.1, 3.3, 21.78, 19.8, 8.58, 0, 8.58, 16.5, 21.78" style="fill-rule:nonzero;"/>
+						  </svg>
+						  <svg height="25" width="23" class="star rating" data-rating="2">
+							<polygon points="9.9, 1.1, 3.3, 21.78, 19.8, 8.58, 0, 8.58, 16.5, 21.78" style="fill-rule:nonzero;"/>
+						  </svg>
+						  <svg height="25" width="23" class="star rating" data-rating="3">
+							<polygon points="9.9, 1.1, 3.3, 21.78, 19.8, 8.58, 0, 8.58, 16.5, 21.78" style="fill-rule:nonzero;"/>
+						  </svg>
+						  <svg height="25" width="23" class="star rating" data-rating="4">
+							<polygon points="9.9, 1.1, 3.3, 21.78, 19.8, 8.58, 0, 8.58, 16.5, 21.78" style="fill-rule:nonzero;"/>
+						  </svg>
+						  <svg height="25" width="23" class="star rating" data-rating="5">
+							<polygon points="9.9, 1.1, 3.3, 21.78, 19.8, 8.58, 0, 8.58, 16.5, 21.78" style="fill-rule:nonzero;"/>
+						  </svg>
+						</div>
+						<h6>Оцініть вашого менеджера</h6>
+					  </div>
+					  <div class="col-6 manager_right">
+						<div>
+						  <div class="manager_name"><h3>Ірина</h3></div>
+						  <div class="manager_email">l.kosenko@utec-l.com</div>
+						  <div class="manager_telegram"><i class="fab fa-telegram"></i>+380966426120</div>
+						  <div class="manager_telephone"><i class="fas fa-mobile-alt"></i>+380966426120</div>
+						</div>
+					  </div>
+					</div>
+				</div>
+			</div>
 			</div>
 		</div>
 	</div>
