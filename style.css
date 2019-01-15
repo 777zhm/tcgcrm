@@ -351,6 +351,53 @@ table td:hover a{
 }
 /* End Stars rating */
 /* End dashboard_section */
+/* End blog_section */
+.blog_section{
+	padding: 20px;
+}
+
+.post_box{
+	padding-top: 20px;
+}
+
+.post_box .post_image{
+	padding-right: 0;
+	padding-left: 0;
+}
+
+.post_box .post_body{
+	padding-left: 0;
+}
+
+.post_body a:hover{
+	color: #0ac2ff;
+}
+
+.post_heading h3,
+.post_heading h4{
+	font-weight: 600;
+}
+
+/* End blog_section */
+/* End blog_section */
+.contacts_section{
+	padding-top: 20px;
+}
+
+.time_city_select_box{
+	padding-bottom: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+/* End blog_section */
 /******* Start Media Query *******/
 /* Start max-width: 992px and min-width: 1199px */
 @media (min-width: 992px) and (max-width: 1199px)  {
