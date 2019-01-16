@@ -321,7 +321,8 @@ ul ul a {
 }
 
 .heading_row{
-	margin-top: 20px;	
+	margin-top: 20px;
+	margin-bottom: 20px;
 }
 
 .post_box{
@@ -380,9 +381,6 @@ ul ul a {
 	width: 36px;
 }
 
-
-
-
 /* End search_box */
 /* Start tables */
 .table_row{
@@ -391,8 +389,9 @@ ul ul a {
 }
 
 table{
-	margin-top: 0px;
+	margin-top: 4px;
 	margin-bottom: 20px;
+	font-size: 10px;
 }
 
 table td a{
@@ -402,6 +401,12 @@ table td a{
 table tr:hover a{
 	text-decoration: underline;
 	color: #00a2d9;
+}
+
+.filters_row .btn,
+.filters_row .form-control
+{
+	font-size: 10px;
 }
 
 .filters_row .search_box{
@@ -431,6 +436,22 @@ table tr:hover a{
 	border: 1px solid rgb(206, 212, 218);
 	border-radius: 20px;
 }
+
+.filters_row .cargostatus_radio{
+	margin-top: 4px;
+	border-radius: 20px;
+}
+
+.filters_row .cargostatus_radio label{
+	border: 1px solid rgb(206, 212, 218);
+	border-radius: 20px;
+}
+
+.filters_row .route_select{
+
+}
+
+
 
 .download_button_box i{
 	font-size: 26px;
