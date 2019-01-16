@@ -77,8 +77,6 @@ header p {
 
 }
 
-
-
 .info_money {
 	padding: 0 16px;
 }
@@ -371,7 +369,6 @@ ul ul a {
 
 /* End blog_section */
 /* Start search_box */
-
 .search_box{
 	border: 1px solid #ced4da;
 	border-radius: 20px;
@@ -492,8 +489,18 @@ table tr:hover a {
 	padding-left: 15px;
 	padding-right: 15px;
 }
-
 /* End tables */
+/* Start Datepicker hide Up/down arrows*/
+input[type="date"]::-webkit-inner-spin-button {
+    display: none;
+}
+/* End Datepicker hide Up/down arrows*/
+/* Start Datepicker IOS/Safari*/
+input[type="date"] {
+    min-height: 2.5rem;
+}
+/* End Datepicker IOS/Safari*/
+
 
 
 
