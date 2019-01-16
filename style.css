@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
 
 /*.basecolors_test{
-color: #e8bc64;
+color: #e8bc64; color: rgba(232, 188, 100, 1);
 color: #212529;
 }*/
 
@@ -368,6 +368,64 @@ ul ul a {
 }
 
 /* End blog_section */
+
+/******** Start tables ********/
+.table_row {
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+table {
+	margin-top: 4px;
+	margin-bottom: 20px;
+
+	font-size: 12px;
+}
+
+.filters_row .form-control {
+	font-size: 12px;
+}
+
+table td a {
+	color: #212529;
+}
+
+table tr:hover a {
+	text-decoration: underline;
+	color: #00a2d9;
+}
+
+.filters_row .period_select {
+	margin-right: 12px;
+}
+
+.filters_row .date_select {
+	margin-right: 6px;
+}
+
+.filters_row .date_select label {
+	margin-right: 6px;
+}
+
+.download_button_box i {
+	font-size: 26px;
+}
+
+.table_rows_pagination_select {
+	width: 50px;
+}
+
+.table_rows_pagination_select select {
+	padding-top: 0;
+	padding-bottom: 0;
+	height: 26px;
+}
+
+.table_rows_pagination_current {
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
 /* Start search_box */
 .search_box{
 	border: 1px solid #ced4da;
@@ -407,45 +465,20 @@ ul ul a {
 	
 	width: 36px;
 }
-
 /* End search_box */
-/* Start tables */
-.table_row {
-	margin-top: 20px;
-	margin-bottom: 20px;
-}
-
-table {
-	margin-top: 4px;
-	margin-bottom: 20px;
-
+/* Start radio buttons */
+.filters_row label.btn{
 	font-size: 12px;
 }
 
-.filters_row .btn,
-.filters_row .form-control {
-	font-size: 12px;
+.filters_row label.btn:hover{
+
 }
 
-table td a {
-	color: #212529;
-}
-
-table tr:hover a {
-	text-decoration: underline;
-	color: #00a2d9;
-}
-
-.filters_row .period_select {
-	margin-right: 12px;
-}
-
-.filters_row .date_select {
-	margin-right: 6px;
-}
-
-.filters_row .date_select label {
-	margin-right: 6px;
+.filters_row label.btn.active{
+	box-shadow: 0 0 0 0.1rem rgba(232, 188, 100, 1); /*#e8bc64*/
+	background-color: rgba(232, 188, 100, 1);
+	font-weight: 600;
 }
 
 .filters_row .invoces_radio {
@@ -467,29 +500,7 @@ table tr:hover a {
 	border-radius: 20px;
 }
 
-.filters_row .route_select {}
-
-
-
-.download_button_box i {
-	font-size: 26px;
-}
-
-.table_rows_pagination_select {
-	width: 50px;
-}
-
-.table_rows_pagination_select select {
-	padding-top: 0;
-	padding-bottom: 0;
-	height: 26px;
-}
-
-.table_rows_pagination_current {
-	padding-left: 15px;
-	padding-right: 15px;
-}
-/* End tables */
+/* End radio buttons */
 /* Start Datepicker hide Up/down arrows*/
 input[type="date"]::-webkit-inner-spin-button {
     display: none;
@@ -500,6 +511,10 @@ input[type="date"] {
     min-height: 2.5rem;
 }
 /* End Datepicker IOS/Safari*/
+/******* End tables *******/
+
+
+
 
 
 
