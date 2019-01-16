@@ -1,15 +1,20 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700&subset=cyrillic-ext');
 
-/*@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300');*/
+/*.basecolors_test{
+color: #e8bc64;
+color: #212529;
+}*/
+
 
 html{
 	font-size: 14px;
 }
 
 body{
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'Montserrat', sans-serif;
 	font-size: 14px;
-	color: #000000;
+	color: #212529;
 	background-color: #fff;
 }
 
@@ -35,7 +40,7 @@ p {
     font-size: 1rem; /* 14px/14 */
     font-weight: 300;
     line-height: 1.7em;
-    color: #999;
+    color: #212529;
 }
 
 i,
@@ -53,9 +58,10 @@ a:focus {
 
 /* Start header */
 header{
-	background: #003765;
+	background: #e8bc64;
 	padding: 4px 0px;
 	color: #fff;
+	font-family: 'Open Sans', sans-serif;
 }
 
 header p{
@@ -76,7 +82,7 @@ header p{
 	background-color: #fff;
 	padding: 0;
 	border: 0px;
-	color: #777;
+	color: #212529;
 	font-size: 20px;
 	line-height: 20px;
 	border-radius: 0px 20px 20px 0px;
@@ -135,12 +141,13 @@ header p{
 }
 
 #sidebar {
-    min-width: 136px;
-    max-width: 136px;
+    min-width: 150px;
+    max-width: 150px;
     background: transparent;
     transition: all 0.3s;
     border-right: 1px solid #d2d2d2;
-    color: #003765;
+    color: #212529;
+    font-family: 'Open Sans', sans-serif;
 }
 
 #sidebar ul li a {
@@ -164,14 +171,14 @@ header p{
 }
 
 #sidebar ul li a:hover {
-    color: #00a2d9;
-    background: #fff;
+    color: #fff;
+    background:  #e8bc64;
 }
 
 #sidebar ul li.active>a,
 a[aria-expanded="true"] {
     color: #fff;
-    background: #00a2d9;
+    background:  #e8bc64;
 }
 
 a[data-toggle="collapse"] {
@@ -189,7 +196,7 @@ a[data-toggle="collapse"] {
 ul ul a {
     font-size: 0.9em !important;
     padding-left: 30px !important;
-    background: #00a2d9;
+    background: #e8bc64;
 }
 
 /***** End Sidebar *****/
@@ -201,12 +208,12 @@ ul ul a {
     line-height: 32px;
     border-radius: 3px;
     box-sizing: border-box;
-    border: 1px solid #00a2d9;
+    border: 1px solid #e8bc64;
     background-color: transparent;
    
     font-size: 18px;
     font-weight: 100;
-    color: #00a2d9;
+    color: #e8bc64;
     text-align: center;
     white-space: nowrap;
     cursor: pointer;
@@ -215,7 +222,7 @@ ul ul a {
 }
 
 .button_standart:hover {
-    background-color: #00a2d9;
+    background-color: #e8bc64;
     color: #fff;
 }
 
@@ -231,7 +238,7 @@ ul ul a {
 
 .block_heading{
 	font-size: 16px;
-	color: #004987;
+	color: #212529;
 	margin-bottom: 20px;
 }
 
@@ -247,16 +254,16 @@ table{
 }
 
 table td a{
-	color: #00a2d9;
+	color: #212529;
 }
 
-table td:hover a{
+table tr:hover a{
 	text-decoration: underline;
 	color: #00a2d9;
 }
 
 .total_amount{
-	color: #000;
+	color: #212529;
 	font-size: 18px;
 	font-weight: 600;
 }
@@ -268,11 +275,11 @@ table td:hover a{
 
 .cargo_stage i{
 	font-size: 40px;
-	color: #00a2d9;
+	color: #e8bc64;
 }
 
 .circle{
-	border: 1px solid green;
+	border: 1px solid #00a2d9;
 	border-radius: 50%;
 	height: 100px;
 	width: 100px;
@@ -285,7 +292,7 @@ table td:hover a{
 	height: 36px;
 	line-height: 36px;
 	font-size: 29px;
-	color: #00a2d9;
+	color: #e8bc64;
 
 	position: absolute;
 	top: 0;
@@ -313,14 +320,14 @@ table td:hover a{
 	width: 32px;
 	font-size: 24px;
 	text-align: center;
-	color: #00a2d9;
+	color: #e8bc64;
 }
 /* Start Stars rating */
 .stars {
   cursor: pointer;
 }
 .stars:hover .star polygon {
-  fill: #ffd055 !important;
+  fill: #e8bc64; !important;
 }
 .stars .star {
   float: left;
@@ -332,7 +339,7 @@ table td:hover a{
   fill: #d8d8d8 !important;
 }
 .stars[data-stars] .star polygon {
-  fill: #ffd055;
+  fill: #e8bc64;
 }
 .stars[data-stars="1"] .star:nth-child(1) ~ .star polygon {
   fill: #d8d8d8;
@@ -370,7 +377,7 @@ table td:hover a{
 }
 
 .post_body a:hover{
-	color: #0ac2ff;
+	color: #e8bc64;
 }
 
 .post_heading h3,
@@ -388,16 +395,11 @@ table td:hover a{
 	padding-bottom: 20px;
 }
 
-
-
-
-
-
-
-
-
-
 /* End blog_section */
+
+
+
+
 /******* Start Media Query *******/
 /* Start max-width: 992px and min-width: 1199px */
 @media (min-width: 992px) and (max-width: 1199px)  {
@@ -417,7 +419,7 @@ table td:hover a{
 }
 
 #sidebar ul li a {
-    padding: 12px 8px;
+    padding: 12px 8px 12px 8px;
     text-align: center;
     font-size: 0.85em;
 }
