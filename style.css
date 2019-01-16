@@ -63,45 +63,44 @@ a:focus {
 /* Start header */
 header {
 	background: #e8bc64;
-	padding: 4px 0px;
+	padding: 4px 0;
 	color: #fff;
+	font-size: 14px;
+	line-height: 14px;
 }
 
 header p {
 	color: #fff;
 }
 
-.header_info_box {
-	font-size: 14px;
-	line-height: 14px;
-	text-align: center;
+.header_info_box{
+
 }
 
-.header_info_box p {
-	font-size: 14px;
-	line-height: 14px;
-}
 
-.header_info_box i {
-	font-size: 20px;
-}
 
 .info_money {
-	width: 60px;
+	padding: 0 16px;
 }
 
 .info_userid {
-	width: 100px;
+	padding: 0 16px;
 }
 
 .info_username {
-	width: 136px;
+	padding: 0 16px;
+	font-size: 22px;
+	line-height: 22px;
 }
 
 .info_logout_button {
-	width: 60px;
+	padding: 0 16px;
 }
 
+.header_info_box i{
+	font-size: 28px;
+	line-height: 28px;
+}
 
 
 /* End header */
@@ -372,25 +371,43 @@ ul ul a {
 
 /* End blog_section */
 /* Start search_box */
-.search_box input {
-	border-radius: 20px 0px 0px 20px;
-	padding: 2px 4px 2px 10px;
+
+.search_box{
+	border: 1px solid #ced4da;
+	border-radius: 20px;
+	
+	margin-right: 6px;
+	
+	max-width: 206px;
+	max-height: 31px;
+}
+
+.search_box input{
+	border-radius: 20px 0 0 20px;
 	border: 0px solid white;
+	
+	font-size: 14px;
+	line-height: 14px;
+	
+	padding: 0px 4px 0px 10px;
+	max-height: 29px;
 }
 
 .search_box .input-group-append {
-	border-radius: 0px 20px 20px 0px;
-	border: 0px solid white;
+	border-radius: 0 20px 20px 0;
+	border: 0px solid #fff;
 }
 
-.search_button {
+.search_box .search_button {
+	border-radius: 0 20px 20px 0;
 	background-color: #fff;
 	padding: 0;
-	border: 0px;
-	color: #212529;
-	font-size: 20px;
-	line-height: 20px;
-	border-radius: 0px 20px 20px 0px;
+	border: 0;
+	color: #ced4da;
+
+	font-size: 18px;
+	line-height: 18px;
+	
 	width: 36px;
 }
 
@@ -420,15 +437,6 @@ table td a {
 table tr:hover a {
 	text-decoration: underline;
 	color: #00a2d9;
-}
-
-
-
-.filters_row .search_box {
-	border: 1px solid rgb(206, 212, 218);
-	width: 180px;
-	margin-right: 6px;
-	border-radius: 20px;
 }
 
 .filters_row .period_select {
