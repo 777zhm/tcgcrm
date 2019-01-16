@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
-@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700&subset=cyrillic-ext');
 
 /*.basecolors_test{
 color: #e8bc64;
@@ -12,7 +11,7 @@ html{
 }
 
 body{
-	font-family: 'Montserrat', sans-serif;
+	font-family: 'Open Sans', sans-serif;
 	font-size: 14px;
 	color: #212529;
 	background-color: #fff;
@@ -61,7 +60,6 @@ header{
 	background: #e8bc64;
 	padding: 4px 0px;
 	color: #fff;
-	font-family: 'Open Sans', sans-serif;
 }
 
 header p{
@@ -115,13 +113,12 @@ header p{
 }
 
 #sidebar {
-    min-width: 150px;
-    max-width: 150px;
+    min-width: 140px;
+    max-width: 140px;
     background: transparent;
     transition: all 0.3s;
     border-right: 1px solid #d2d2d2;
     color: #212529;
-    font-family: 'Open Sans', sans-serif;
 }
 
 #sidebar ul li a {
@@ -391,7 +388,7 @@ ul ul a {
 table{
 	margin-top: 4px;
 	margin-bottom: 20px;
-	font-size: 10px;
+	font-size: 12px;
 }
 
 table td a{
