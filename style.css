@@ -68,32 +68,6 @@ header p{
 	color: #fff;
 }
 
-.search_box .input-group input{
-	border-radius: 20px 0px 0px 20px;
-	padding: 2px 4px 2px 10px;
-	border: 0px solid white;
-}
-
-.search_box .input-group .input-group-append{
-	border-radius: 0px 20px 20px 0px;
-}
-
-.search_button{
-	background-color: #fff;
-	padding: 0;
-	border: 0px;
-	color: #212529;
-	font-size: 20px;
-	line-height: 20px;
-	border-radius: 0px 20px 20px 0px;
-	width: 36px;
-}
-
-.input-group-append{
-	border: 0px solid white;
-	box-shadow: none;
-}
-
 .header_info_box{
 	font-size: 14px;
 	line-height: 14px;
@@ -246,28 +220,11 @@ ul ul a {
 	text-decoration: underline;
 }
 
-
-
-table{
-	margin-top: 20px;
-	margin-bottom: 20px;
-}
-
-table td a{
-	color: #212529;
-}
-
-table tr:hover a{
-	text-decoration: underline;
-	color: #00a2d9;
-}
-
 .total_amount{
 	color: #212529;
 	font-size: 18px;
 	font-weight: 600;
 }
-
 
 .cargo_block{
 	padding-top: 26px;
@@ -363,6 +320,10 @@ table tr:hover a{
 	padding: 20px;
 }
 
+.heading_row{
+	margin-top: 20px;	
+}
+
 .post_box{
 	padding-top: 20px;
 }
@@ -396,22 +357,101 @@ table tr:hover a{
 }
 
 /* End blog_section */
-/* Start finance_section */
-.download_button_box{
-	
+/* Start search_box */
+.search_box input{
+	border-radius: 20px 0px 0px 20px;
+	padding: 2px 4px 2px 10px;
+	border: 0px solid white;
+}
+
+.search_box .input-group-append{
+	border-radius: 0px 20px 20px 0px;
+	border: 0px solid white;
+}
+
+.search_button{
+	background-color: #fff;
+	padding: 0;
+	border: 0px;
+	color: #212529;
+	font-size: 20px;
+	line-height: 20px;
+	border-radius: 0px 20px 20px 0px;
+	width: 36px;
+}
+
+
+
+
+/* End search_box */
+/* Start tables */
+.table_row{
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+table{
+	margin-top: 0px;
+	margin-bottom: 20px;
+}
+
+table td a{
+	color: #212529;
+}
+
+table tr:hover a{
+	text-decoration: underline;
+	color: #00a2d9;
+}
+
+.filters_row .search_box{
+	border: 1px solid rgb(206, 212, 218);
+	width: 180px;
+	margin-right: 6px;
+	border-radius: 20px;
+}
+
+.filters_row .period_select{
+	margin-right: 12px;
+}
+
+.filters_row .date_select{
+	margin-right: 6px;
+}
+
+.filters_row .date_select label{
+	margin-right: 6px;
+}
+
+.filters_row .invoces_radio{
+	border-radius: 20px;
+}
+
+.filters_row .invoces_radio label{
+	border: 1px solid rgb(206, 212, 218);
+	border-radius: 20px;
+}
+
+.download_button_box i{
+	font-size: 26px;
 }
 
 .table_rows_pagination_select{
-	
+	width: 50px;
+}
+
+.table_rows_pagination_select select{
+	padding-top: 0;
+	padding-bottom: 0;
+	height: 26px;
 }
 
 .table_rows_pagination_current{
-	
+	padding-left: 15px;
+	padding-right: 15px;
 }
 
-
-
-/* End finance_section */
+/* End tables */
 
 
 

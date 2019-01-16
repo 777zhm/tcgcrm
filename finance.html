@@ -130,13 +130,14 @@
 				<div class="row filters_row">
 					<div class="col-12">
 						<form class="form-inline" name="table_filters" id="table_filters">
-								<div class="input-group">
+								<div class="input-group search_box">
 									<input type="text" class="form-control" placeholder="Пошук" aria-label="Search" aria-describedby="search">
 									<div class="input-group-append">
 										<button class="search_button" type="submit"><i class="fas fa-search"></i></button>
 									</div>
 								</div>
-								<div class="form-group ">
+
+								<div class="form-group period_select">
 									<select class="form-control" id="periodSelect">
 										<option>Весь період</option>
 										<option>Цей тиждень</option>
@@ -145,15 +146,15 @@
 										<option>Цей рік</option>
 									</select>
 								</div>
-								<div class="form-group">
+								<div class="form-group date_select">
 	                <label class="col-form-label" for="startdate"> З </label>
 	                <input type="date" class="form-control" id="startdate" name="departuredate" min="2019-01-01">
 	              </div>
-	              <div class="form-group">
+	              <div class="form-group date_select">
 	                <label class="col-form-label" for="startdate"> по </label>
 	                <input  type="date" class="form-control" id="enddate" name="departuredate" min="2019-01-01">
 	              </div>
-								<div class="form-group ">
+								<div class="form-group invoces_radio">
 	                  <div class="btn-group btn-group-toggle" data-toggle="buttons">
 	                      <label class="btn">
 	                          <input class="form-check-input" type="radio" name="invocesRadios" id="invocesRadiosIn" value="invocesIn" checked>
@@ -169,23 +170,26 @@
 					</div>
 				</div>
 
-				<div class="row">
-					<div class="col-12">
-						<div class="col-3 download_button_box">
-							<button class="btn"><i class="far fa-file-excel">(77)</i></button>
-						</div>
-						<div class="col-3 table_rows_pagination_select">
-							<select class="form-control" id="paginationSelect">
-								<option>10</option>
-								<option>20</option>
-								<option>50</option>
-								<option>100</option>
-							</select>
-						</div>
-						<div class="col-3 table_rows_pagination_current">
-							<p>1-10 of 77</p>
+				<div class="row table_row">
+						<div class="col-12 row justify-content-end">
+							<div class="download_button_box col align-items-start">
+								<button class="btn"><i class="far fa-file-excel"></i> (77)</button>
+							</div>
+							
+							<div class="table_rows_pagination_select align-self-end">
+								<select class="form-control" id="paginationSelect">
+									<option>10</option>
+									<option>20</option>
+									<option>50</option>
+									<option>100</option>
+								</select>
+							</div>
+							
+							<div class="table_rows_pagination_current align-self-end">
+								<div>1-10 of 77</div>
+							</div>
 						</div>	
-					</div>
+					
 					<div class="col-12">
 						<table class="table table-responsive table-striped table-hover">
 							<thead>
@@ -282,7 +286,21 @@
 							</tbody>
 						</table>
 					</div>
-				</div>
+
+					<div class="col-12 row justify-content-end">
+						<div class="table_rows_pagination_select">
+							<select class="form-control" id="paginationSelect">
+								<option>10</option>
+								<option>20</option>
+								<option>50</option>
+								<option>100</option>
+							</select>
+						</div>
+						<div class="table_rows_pagination_current">
+							<p>1-10 of 77</p>
+						</div>
+					</div>	
+				
 
 			</div>
 		</div>
