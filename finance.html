@@ -120,8 +120,59 @@
 						<p>Баланс: <span class="total_amount">&#36; 11,413</span></p>
 					</div>
 					<div class="col-6 text-right">
-						<button class="button_standart button_refund">Додати кошти</button>
+						<button class="button_standart button_addmoney" type="button" data-toggle="modal" data-target="#addMoneyModal">Додати кошти</button>
 					</div>
+<!-- Start Modal -->
+<div class="modal fade addmoney_modal" id="addMoneyModal" tabindex="-1" role="dialog" aria-labelledby="addMoneyModal" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Додавання коштів</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <form class="addmoney_form" id="addmoney_form">
+	      <div class="modal-body">
+			<table class="table finance_modal_table table-responsive">
+				<thead>
+					<tr>
+						<th scope="col">ID</th>
+						<th scope="col">Дата</th>
+						<th scope="col">Замовлення</th>
+						<th scope="col">Вміст</th>
+						<th scope="col">Тип</th>
+						<th scope="col">Сума</th>
+						<th scope="col">Курс до USD</th>
+						<th scope="col">Сума, USD</th>
+						<th scope="col">Баланс, USD</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td><input type="number" class="form-control" name="money_id" required></td>
+						<td><input type="date" class="form-control" name="money_date" required></td>
+						<td><input type="text" class="form-control" name="money_order" required></td>
+						<td><input type="text" class="form-control" name="money_content"></td>
+						<td><input type="text" class="form-control" name="money_type"></td>
+						<td><input type="text" class="form-control" name="money_amount"></td>
+						<td><input type="number" class="form-control" name="money_rate_before_usd"></td>
+						<td><input type="number" class="form-control" name="money_amount_usd"></td>
+						<td><input type="number" class="form-control" name="money_balance_usd"></td>
+					</tr>
+				</tbody>
+			</table>
+	      </div>
+	      <div class="modal-footer">
+	          <button type="submit" class="button_standart modal_button_submit">Зберегти</button>
+	      </div>
+	  </form>
+    </div>
+  </div>
+</div>
+
+<!-- End Modal -->
+
 				</div>
 				<div class="row filters_row">
 					<div class="col-12">

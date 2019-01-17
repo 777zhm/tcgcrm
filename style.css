@@ -199,7 +199,9 @@ ul ul a {
 	color: #fff;
 }
 
-.button_refund {}
+.button_addmoney {
+
+}
 
 /***** End Buttons *****/
 /* Start dashboard_section */
@@ -426,6 +428,39 @@ table tr:hover a {
 	padding-right: 15px;
 }
 
+/******* End tables *******/
+/******* Start modal *******/
+.addmoney_modal .modal-footer, 
+.addmoney_modal .modal-header,
+.addmoney_modal .modal-body
+{
+	border: none;
+}
+
+.addmoney_modal .modal-body{
+	padding: 2px;
+}
+
+/* Start finance_modal_table */
+table.finance_modal_table th{
+	border: none;
+}
+
+.table.finance_modal_table th {
+     padding: .25rem; 
+}
+
+.finance_modal_table{
+	margin-bottom: 2px;
+}
+
+.finance_modal_table td{
+	padding: 2px;
+}
+/* End finance_modal_table */
+
+/******* End modal *******/
+/******* Start forms *******/
 /* Start search_box */
 .search_box{
 	border: 1px solid #ced4da;
@@ -499,8 +534,17 @@ table tr:hover a {
 	border: 1px solid rgb(206, 212, 218);
 	border-radius: 20px;
 }
-
 /* End radio buttons */
+/* Start HTML5 Up and Down arrows. */
+input[type="number"]::-webkit-outer-spin-button, input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+/* End HTML5 Up and Down arrows. */
 /* Start Datepicker hide Up/down arrows*/
 input[type="date"]::-webkit-inner-spin-button {
     display: none;
@@ -508,10 +552,10 @@ input[type="date"]::-webkit-inner-spin-button {
 /* End Datepicker hide Up/down arrows*/
 /* Start Datepicker IOS/Safari*/
 input[type="date"] {
-    min-height: 2.5rem;
+    min-height: 2.4rem;
 }
 /* End Datepicker IOS/Safari*/
-/******* End tables *******/
+/******* End forms *******/
 /******* Start Account page *******/
 .profile_tab, .news_tab, .notification_tab, .address_tab{
 	padding-top: 16px;
