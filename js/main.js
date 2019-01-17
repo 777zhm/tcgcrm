@@ -13,5 +13,11 @@
 			$(this).parent().attr('data-stars', $(this).data('rating'));
 		});
 
+		// Bootstrap tabs on account page
+		$('#myTab a').on('click', function (e) {
+		e.preventDefault()
+		$(this).tab('show')
+		});
+
 	});
 })(jQuery);
