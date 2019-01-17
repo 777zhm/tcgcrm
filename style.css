@@ -438,26 +438,13 @@ table tr:hover a {
 }
 
 .addmoney_modal .modal-body{
-	padding: 2px;
+	padding: 6px;
 }
 
-/* Start finance_modal_table */
-table.finance_modal_table th{
-	border: none;
+.addmoney_modal .addmoney_form input{
+	margin-top: 4px;
+	margin-bottom: 4px;
 }
-
-.table.finance_modal_table th {
-     padding: .25rem; 
-}
-
-.finance_modal_table{
-	margin-bottom: 2px;
-}
-
-.finance_modal_table td{
-	padding: 2px;
-}
-/* End finance_modal_table */
 
 /******* End modal *******/
 /******* Start forms *******/
