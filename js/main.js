@@ -19,5 +19,11 @@
 		$(this).tab('show')
 		});
 
+		//Account page add new address show div
+		$('#addNewAddressButton').click(function() {
+			$('#addNewAddressDiv').toggle('slow', function() {});
+			$('#addNewAddressButton').toggle('slow', function() {});
+		});
+
 	});
 })(jQuery);

@@ -512,11 +512,84 @@ input[type="date"] {
 }
 /* End Datepicker IOS/Safari*/
 /******* End tables *******/
+/******* Start Account page *******/
+.profile_tab, .news_tab, .notification_tab, .address_tab{
+	padding-top: 16px;
+	padding-left: 20px;
+}
+
+.notification_tab h4{
+	margin-top: 12px;
+	margin-bottom: 12px;
+}
+
+.notification_channels .icon_box{
+	display: inline-block;
+	color: #212529;
+	font-size: 14px;
+	width: 50px;
+	margin: 6px;
+}
+
+.notification_channels .icon_box i{
+	color: #e8bc64;
+	font-size: 26px;
+}
+
+.notification_time label{
+	margin-left: 12px;
+}
+
+.notification_time select{
+	border: 1px solid #ced4da;
+}
+
+.notification_time input[type="time"]{
+	border: 1px solid #ced4da;
+}
+
+.card-header{
+	background-color: #fff;
+}
+
+.card-header .btn-link{
+	color: #212529;
+}
+
+.notification_save{
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
 
 
+.adderess_box{
+	border-radius: 3px;
+	box-sizing: border-box;
+	border: 1px solid #e8bc64;
+	border-bottom: none;
+	border-right: none;
+	
+	padding: 12px 8px 8px 32px;
+	margin-bottom: 26px;
+}
 
+.new_adderess_box{
+	display: none;
+	
+}
 
+.new_adderess_box input{
+	border: none;
+	border-bottom: 1px dotted #ced4da;
+	margin-top: 8px;
+}
 
+.address_save_box{
+	margin-top: 4px;
+	text-align: center;
+}
+
+/******* End Account page *******/
 
 
 

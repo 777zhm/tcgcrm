@@ -125,7 +125,7 @@
 				<div class="row">
 					<div class="tab-content" id="nav-tabContent">
 						<div class="tab-pane fade show active" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
-							<div class="row heading_row">
+							<div class="row profile_tab">
 								<div class="col-12">
 									<div class="user_name">
 										<span class="icon_box"><i class="far fa-user"></i></span>
@@ -147,7 +147,7 @@
 							</div>
 						</div>
 						<div class="tab-pane fade" id="nav-news" role="tabpanel" aria-labelledby="nav-news-tab">
-							<div class="row filters_row">
+							<div class="row table_row news_tab">
 								<div class="col-12">
 									<p>Остання дата синхронізації <span class="last_sync_date"> 9:42:27</span></p>
 									<form class="form-inline" name="table_filters" id="table_filters">
@@ -158,10 +158,6 @@
 											</div>
 										</div>							
 									</form>
-								</div>
-							</div>
-							<div class="row table_row">
-								<div class="col-12">
 									<table class="table table-responsive table-striped table-hover">
 										<thead>
 											<tr>
@@ -222,16 +218,16 @@
 							</div>
 						</div>
 						<div class="tab-pane fade" id="nav-notification" role="tabpanel" aria-labelledby="nav-notification-tab">
-							<div class="row heading_row">
+							<div class="row notification_tab">
 								<div class="col-12">
 									<div class="notification_channels">
 										<h4>Канали</h4>
-										<span class="icon_box"><i class="fab fa-telegram"></i></span>
-										<span class="icon_box"><i class="fab fa-skype"></i></span>
-										<span class="icon_box"><i class="fab fa-viber"></i></span>
-										<span class="icon_box"><i class="fas fa-sms"></i></span>
-										<span class="icon_box"><i class="fas fa-at"></i></span>
-										<span class="icon_box"><i class="far fa-envelope"></i></span>									
+										<span class="icon_box"><i class="fab fa-telegram"></i>Telegram</span>
+										<span class="icon_box"><i class="fab fa-skype"></i>Skype</span>
+										<span class="icon_box"><i class="fab fa-viber"></i>Viber</span>
+										<span class="icon_box"><i class="fas fa-sms"></i>Sms</span>
+										<span class="icon_box"><i class="fas fa-at"></i>Email</span>
+										<!-- <span class="icon_box"><i class="far fa-envelope"></i></span> -->	
 									</div>
 									<div class="notification_time">
 										<h4>Доступний час</h4>
@@ -243,31 +239,53 @@
 										<label for="notification_time_start">З</label>
 										<input name="notification_time_start" id="notification_time_start" type="time">
 										<label for="notification_time_end">до</label>
-										<input name="notification_time_end" id="notification_time_end" type="time">						
+										<input name="notification_time_end" id="notification_time_end" type="time">		
 									</div>
 									<div class="notification_events">
 										<h4>Події</h4>
-										<ul>
-											<li>Події документообігу
-												<ul>
-													<li>Вантаж затримано в країні відправлення</li>
-													<li>Вантаж в дорозі</li>
-													<li>Деталі руху вантажу</li>
-													<li>Вантаж прибув до країни призначення</li>
-													<li>Проходження митного контролю</li>
-													<li>Вантаж передано локальному перевізнику</li>
-													<li>Отримано вантаж від відправника</li>
-													<li>Отримання клієнтом посилки</li>
-												</ul>
-											</li>
-											<li>Фінанси
-												<ul>
-													<li>Надходження коштів</li>
-													<li>Списання коштів</li>
-													<li>Надходження коштів (роялті)</li>
-												</ul>
-											</li>
-										</ul>
+										<div id="accordion">
+											<div class="card">
+												<div class="card-header" id="headingOne">
+													<h5 class="mb-0">
+														<button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+														Події документообігу
+														</button>
+													</h5>
+												</div>
+												<div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+													<div class="card-body">
+														<ul>
+															<li><a href="#">Вантаж затримано в країні відправлення</a></li>
+															<li><a href="#">Вантаж в дорозі</a></li>
+															<li><a href="#">Деталі руху вантажу</a></li>
+															<li><a href="#">Вантаж прибув до країни призначення</a></li>
+															<li><a href="#">Проходження митного контролю</a></li>
+															<li><a href="#">Вантаж передано локальному перевізнику</a></li>
+															<li><a href="#">Отримано вантаж від відправника</a></li>
+															<li><a href="#">Отримання клієнтом посилки</a></li>
+														</ul>
+													</div>
+												</div>
+											</div>
+											<div class="card">
+												<div class="card-header" id="headingTwo">
+													<h5 class="mb-0">
+														<button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+															Фінанси
+														</button>
+													</h5>
+												</div>
+												<div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+													<div class="card-body">
+														<ul>
+															<li><a href="#">Надходження коштів</a></li>
+															<li><a href="#">Списання коштів</a></li>
+															<li><a href="#">Надходження коштів (роялті)</a></li>
+														</ul>
+													</div>
+												</div>
+											</div>
+										</div>
 									</div>
 									<div class="notification_save">
 										<button class="button_standart button_save">Зберегти</button>
@@ -276,13 +294,31 @@
 							</div>
 						</div>
 						<div class="tab-pane fade" id="nav-address" role="tabpanel" aria-labelledby="nav-address-tab">
-							<div class="row heading_row">
+							<div class="row address_tab">
 								<div class="col-12">
-									<div class="adderess_notice">
-										<p>У вас немає збережених адрес доставки. Будь ласка, додайту нову адресу.</p>
+									<div class="adderess_box">
+										<div class="address_user_name">Сергій Бондаренко</div>
+										<div class="address_user_telephone">0637872233</div>
+										<div class="address_city">Київ</div>
+										<div class="address_street">вул. Хрещатик, 14, оф.21</div>
+									</div>
+									<div class="adderess_box">
+										<div class="address_user_name">Оксана Яківець</div>
+										<div class="address_user_telephone">0637872233</div>
+										<div class="address_city">Київ</div>
+										<div class="address_street">вул. Хрещатик, 14, оф.23</div>
+									</div>
+									<div class="adderess_box new_adderess_box" id="addNewAddressDiv">
+										<form>
+											<div class="address_user_name"><input type="text" placeholder="Ім’я, Прізвище"></div>
+											<div class="address_user_telephone"><input type="tel" placeholder="Телефон"></div>
+											<div class="address_city"><input type="text" placeholder="Місто"></div>
+											<div class="address_street"><input type="text" placeholder="Вулиця, будинок, офіс"></div>
+											<div class="address_save_box"><button class="button_standart" id="saveNewAddressButton">Зберегти</button></div>
+										</form>
 									</div>
 									<div class="address_addnew">
-										<button class="button_standart button_addnew">Додати нову адресу</button>
+										<button class="button_standart button_addnew" id="addNewAddressButton">Додати нову адресу</button>
 									</div>
 								</div>					
 							</div>
