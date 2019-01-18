@@ -117,13 +117,22 @@ header p {
 }
 
 #sidebar {
-	padding-top: 39px;
+	/*padding-top: 39px;*/
 	min-width: 140px;
 	max-width: 140px;
 	background: transparent;
 	transition: all 0.3s;
 	border-right: 1px solid #d2d2d2;
 	color: #212529;
+}
+
+#sidebar .logotype_box{
+padding: 4px;
+text-align: center;
+}
+
+#sidebar .logotype_box img{
+max-height: 31px;
 }
 
 #sidebar ul li a {
