@@ -13,13 +13,6 @@
 			$(this).parent().attr('data-stars', $(this).data('rating'));
 		});
 
-		
-		
-		// Bootstrap tabs on account page
-		$('#myTab a').on('click', function (e) {
-		e.preventDefault()
-		$(this).tab('show')
-		});
 
 		// Bootstrap tabs anchors
 		if( $('#nav-tab').length ){
@@ -30,14 +23,15 @@
 		}
 
 
-
 		//Account page add new address show div
 		$('#addNewAddressButton').click(function() {
 			$('#addNewAddressDiv').toggle('slow', function() {});
 			$('#addNewAddressButton').toggle('slow', function() {});
 		});
 
-	});
 
+		//Datepicker for safari
+		// jQuery('input[type=date]').datepicker();
 
+});
 })(jQuery);

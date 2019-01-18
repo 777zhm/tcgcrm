@@ -79,10 +79,12 @@ header p {
 
 .info_money {
 	padding: 0 16px;
+	font-size: 18px;
 }
 
 .info_userid {
 	padding: 0 16px;
+	font-size: 16px;
 }
 
 .info_username {
@@ -115,6 +117,7 @@ header p {
 }
 
 #sidebar {
+	padding-top: 39px;
 	min-width: 140px;
 	max-width: 140px;
 	background: transparent;
@@ -146,6 +149,12 @@ header p {
 #sidebar ul li a:hover {
 	color: #fff;
 	background: #e8bc64;
+}
+
+
+#sidebar ul li.active{
+	color: #fff;
+	background: rgba(232, 188, 100, 0.8); /*#e8bc64;*/
 }
 
 #sidebar ul li.active>a,
@@ -206,7 +215,7 @@ ul ul a {
 /***** End Buttons *****/
 /* Start dashboard_section */
 .dasbord_artbord {
-	padding: 20px 10px 20px 20px;
+	padding: 20px 5px 20px 15px;
 }
 
 .block_heading {
@@ -277,6 +286,10 @@ ul ul a {
 	font-size: 24px;
 	text-align: center;
 	color: #e8bc64;
+}
+
+.user_message_box{
+ max-width: 450px;
 }
 
 /* Start Stars rating */
@@ -372,6 +385,10 @@ ul ul a {
 /* End blog_section */
 
 /******** Start tables ********/
+.table-responsive{
+	display: table;
+}
+
 .table_row {
 	margin-top: 20px;
 	margin-bottom: 20px;
@@ -414,7 +431,7 @@ table tr:hover a {
 }
 
 .table_rows_pagination_select {
-	width: 50px;
+	width: 70px;
 }
 
 .table_rows_pagination_select select {
@@ -462,11 +479,8 @@ table tr:hover a {
 .search_box input{
 	border-radius: 20px 0 0 20px;
 	border: 0px solid white;
-	
-	font-size: 14px;
-	line-height: 14px;
-	
-	padding: 0px 4px 0px 10px;
+	font-size: 12px;
+	padding: 6px 4px 0px 16px;
 	max-height: 29px;
 }
 
@@ -489,21 +503,7 @@ table tr:hover a {
 }
 /* End search_box */
 /* Start radio buttons */
-.filters_row label.btn{
-	font-size: 12px;
-}
-
-.filters_row label.btn:hover{
-
-}
-
-.filters_row label.btn.active{
-	box-shadow: 0 0 0 0.1rem rgba(232, 188, 100, 1); /*#e8bc64*/
-	background-color: rgba(232, 188, 100, 1);
-	font-weight: 600;
-}
-
-.filters_row .invoces_radio {
+.filters_row .invoces_radio{
 	border-radius: 20px;
 }
 
@@ -512,14 +512,22 @@ table tr:hover a {
 	border-radius: 20px;
 }
 
-.filters_row .cargostatus_radio {
+.filters_row .cargostatus_radio{
 	margin-top: 4px;
 	border-radius: 20px;
 }
 
 .filters_row .cargostatus_radio label {
+	font-size: 12px;
 	border: 1px solid rgb(206, 212, 218);
 	border-radius: 20px;
+}
+
+.filters_row .cargostatus_radio label.active{
+	background-color: rgba(232, 188, 100, 1);
+	border: none;
+	font-weight: 600;
+	box-shadow: 0 0 0 0.1rem rgba(232, 188, 100, 1); /*#e8bc64*/
 }
 /* End radio buttons */
 /* Start HTML5 Up and Down arrows. */
@@ -542,6 +550,11 @@ input[type="date"] {
     min-height: 2.4rem;
 }
 /* End Datepicker IOS/Safari*/
+
+td input[type="text"]{
+	max-width: 60px;
+}
+
 /******* End forms *******/
 /******* Start Account page *******/
 .profile_tab, .news_tab, .notification_tab, .address_tab{
@@ -635,41 +648,43 @@ input[type="date"] {
 /* End max-width: 991px*/
 /* Start max-width: 768px */
 @media (max-width: 768px) {
-	#sidebar {
-		min-width: 80px;
-		max-width: 80px;
-		text-align: center;
-	}
-
-	#sidebar ul li a {
-		padding: 12px 8px 12px 8px;
-		text-align: center;
-		font-size: 0.85em;
-	}
-
-	#sidebar ul li a i {
-		margin-right: 0;
-		display: block;
-		font-size: 1.8em;
-		margin-bottom: 5px;
-	}
-
-	#sidebar ul ul a {
-		padding: 6px !important;
-	}
-
-	#sidebar .dropdown-toggle::after {
-		top: auto;
-		bottom: 10px;
-		right: 50%;
-		-webkit-transform: translateX(50%);
-		-ms-transform: translateX(50%);
-		transform: translateX(50%);
-	}
-
+#sidebar {
+	min-width: 80px;
+	max-width: 80px;
+	text-align: center;
 }
 
-/* End max-width: 768px*/
+#sidebar ul li a {
+	padding: 12px 8px 12px 8px;
+	text-align: center;
+	font-size: 0.85em;
+}
+
+#sidebar ul li a i {
+	margin-right: 0;
+	display: block;
+	font-size: 1.8em;
+	margin-bottom: 5px;
+}
+
+#sidebar ul ul a {
+	padding: 6px !important;
+}
+
+#sidebar .dropdown-toggle::after {
+	top: auto;
+	bottom: 10px;
+	right: 50%;
+	-webkit-transform: translateX(50%);
+	-ms-transform: translateX(50%);
+	transform: translateX(50%);
+}
+
+.table-responsive{
+	display: table;
+}
+
+}/* End max-width: 768px*/
 /* Start max-width: 575px */
 @media (max-width: 575px) {}
 
